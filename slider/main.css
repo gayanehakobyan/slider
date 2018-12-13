@@ -1,0 +1,75 @@
+body{
+	margin:0;
+}
+
+.prev, .next{
+	cursor:pointer;
+ 	position: absolute;
+ 	top:50%;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+ 	border-radius: 0 3px 3px 0;
+ 	padding: 16px;
+ 	color:white;
+} 
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.container{
+	position: relative;
+	margin: auto;
+	max-width: 1000px;
+}
+
+.circle{
+	height: 20px;
+	width: 20px;
+	background: #bbb;
+	border-radius:50%;
+	display: inline-block;
+	margin: auto;
+
+}
+
+.circle:hover{
+	background:#717171;
+}
+
+.slide{
+/*	height: 300px;*/
+	animation-name: example;
+  	animation-duration: 1.5s;
+}
+@keyframes example {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ .text{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  text-align: center;
+ } 
+ .numbers{
+ 	position: absolute;
+  	top: 0;
+  	padding: 10px;
+  	color:white;
+ }
+ img{
+ 	width:1000px; 
+ 	height: 500px;
+ }
